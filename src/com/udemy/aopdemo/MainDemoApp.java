@@ -23,6 +23,8 @@ public class MainDemoApp {
 		
 		// call the business method
 		Account myAccount = new Account();
+		myAccount.setName("Madhu");
+		myAccount.setLevel("Platinum");
 		theAccountDAO.addAccount(myAccount, true); // will only match on addAccount for this param type
 		theAccountDAO.doWork();
 		
